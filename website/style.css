@@ -6,16 +6,14 @@
   font-family: "DynaPuff", cursive;
 }
 
-.canvas {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  position: absolute;
+@font-face {
+  font-family: Open Sans;
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 }
 
 body {
   min-height: 25%;
-  background: linear-gradient(#868686, #000000);
+  background: linear-gradient(#a86767, #000000);
 }
 
 .navbar-container {
@@ -57,28 +55,31 @@ ul li a:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-ul li a:active{
-  box-shadow: inset 0 0 8px rgba(0,0,0,0.5);
-  transition: all 0.3s ease-in-out
+ul li a:active {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
 }
 
-.jumping-letters {  /* make the transformation smooth over 0.5 seconds */
+.jumping-letters {
+  /* make the transformation smooth over 0.5 seconds */
   animation: jump 1s infinite;
-  transition: all 0.3s ease-in-out;  /* apply the jump animation */
+  transition: all 0.3s ease-in-out; /* apply the jump animation */
 }
 
 @keyframes jump {
   50% {
     transform: translateY(-5px);
-    transition: all 0.3s ease-in-out  /* move the letters up by 10 pixels */
+    transition: all 0.3s ease-in-out; /* move the letters up by 10 pixels */
   }
 }
 
-.hello {
-  color: #ffff;
-  display: grid;
+.solo {
+  color: #fff;
+}
+hgroup {
+  display: ;
   margin: 0;
-  padding: 100px;
+  padding: 45vh;
   place-items: center;
   min-height: 100vh;
   width: 100%;
@@ -124,15 +125,18 @@ ul li a:active{
   width: 100%;
 }
 
-.body-container1 {
-  background-color: #fff;
-  align-items: center;
-  border-radius: 6px;
-  box-sizing: content-box;
-  margin: 0px auto;
-  max-width: 75vw;
-  padding: 15px;
-  width: 100%;
+.desc {
+  align-items: right;
+  width: 50%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  word-spacing: 2px;
+}
+
+.topics {
+  font-size: xx-large;
 }
 
 .body-container2 {
@@ -171,4 +175,13 @@ ul li a:active{
 .sec {
   padding-bottom: 50px;
   border-radius: 6px;
+}
+
+#mustafaSaid {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.7;
+  margin: 10px;
 }
