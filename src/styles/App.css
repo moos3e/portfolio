@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(#b3b3b3, #000000); /* Single background gradient from top to bottom */
+  font-family: 'Questrial', sans-serif;
+  color: #000;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(#b3b3b3, #000000);
+  font-family: 'Questrial', sans-serif;
+  color: #000; /* Default text color */
+}
+
+/* Navbar Styles */
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu Mono', serif;
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+ul li a:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+ul li a:active {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Restoring Jumping Animation */
+.jumping-letters {
+  animation: jump 1s infinite;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes jump {
+  50% {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/* Header Section */
+.hello {
+  text-align: center;
+}
+
+hgroup {
+  font-family: 'DynaPuff', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.solo2 {
+  color: #fff;
+}
+
+/* Content Sections (Experience, Projects, Education) */
+.sec {
+  background-color: #fff; /* White background for sections */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+  padding: 60px 40px; /* Increase padding inside the box */
+  margin: 80px auto; /* Increase space between sections */
+  width: 90%; /* Responsive width */
+  max-width: 1000px; /* Max width to prevent stretching */
+}
+
+/* Specific spacing for body-container to separate sections */
+.body-container {
+  padding: 60px 0; /* Add top and bottom padding for more space between sections */
+  font-family: 'Ubuntu Mono', serif;
+  align-items: center;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  width: 100%;
+  color: #333; /* Darker text color for readability */
+}
+
+/* Adjust margins for individual experience items */
+.experience-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px; /* Increase bottom margin */
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.3);
+}
+
+/* Add more space around the sections */
+/* Add more space around the sections */
+#projects {
+  margin-top: 30vh; /* Increase top margin */
+  margin-bottom: 30vh; /* Increase bottom margin */
+}
+
+#education {
+  margin-top: 30vh; /* Increase top margin */
+  margin-bottom: 30vh; /* Increase bottom margin */
+}
+
+/* Ensure consistency across all sections */
+#work-experience, #projects, #education {
+  padding: 7% 0; /* Increase padding for each section */
+}
+
+/* Projects Section Styling */
+.projects-container {
+  background-color: #fff; /* White background for the box */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for 3D effect */
+  padding: 40px 50px; /* Padding inside the box */
+  margin: 30px auto; /* Center the container */
+  max-width: 1000px; /* Width similar to other sections */
+}
+
+/* Projects Content */
+.projects-header {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.3);
+}
+
+.project-description {
+  flex: 3;
+  line-height: 1.6;
+}
+
+.project-tech {
+  flex: 1;
+  text-align: left;
+}
+
+/* For consistency across all sections */
+#projects, #work-experience, #education {
+  padding: 10% 0;
+}
+
+/* Slideshow and Dots Styling */
+.slideshow {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slideshowSlider {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.slideshowDots {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.slideshowDot {
+  margin: 0 5px;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.slideshowDot.active {
+  background-color: #00C49F;
+}
+
+.topics {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Education Section Styling */
+.education-container {
+  background-color: #fff; /* White background */
+  padding: 40px 50px; /* Adjust padding for uniform space */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 900px; /* Max width for the education container */
+  margin: 30px auto; /* Center the container */
+  font-family: 'Ubuntu Mono', serif; /* Consistent font */
+  color: #333; /* Darker text for better readability */
+}
+
+.school-name {
+  font-size: 2em; /* Larger font size for the school name */
+  margin-bottom: 10px;
+  text-align: left; /* Left align for better visual structure */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+.arizona {
+  color: maroon; /* Maroon color for Arizona */
+}
+
+.state {
+  color: gold; /* Gold color for State */
+}
+
+.university {
+  color: maroon; /* Maroon color for University */
+}
+
+.education-info {
+  font-size: 1em;
+  margin-bottom: 20px;
+  line-height: 1.6; /* Line height for better readability */
+  text-align: left; /* Left align for information */
+}
+
+.education-description {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-align: left; /* Left align for the description */
+}
+
+.education-description span {
+  display: inline-block;
+  margin-bottom: 8px; /* Space between lines */
+}
+
+.education-organizations {
+  display: flex;
+  justify-content: center; /* Center alignment for even look */
+  flex-wrap: wrap; /* Wrap items */
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 20px 0;
+}
+
+.education-organizations li {
+  margin: 10px 30px; /* Spacing between organization items */
+  font-weight: 600; /* Bold font */
+  font-size: 1.1em; /* Slightly larger font size */
+  color: #000; /* Black color for text */
+  text-align: center; /* Center text alignment */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .sec {
+    padding: 40px 20px; /* Adjust padding for mobile */
+    margin: 40px auto; /* Adjust margin for mobile */
+  }
+
+  .body-container {
+    padding: 40px 0; /* Adjust padding for mobile */
+  }
+
+  .experience-item {
+    flex-direction: column; /* Stack experience items vertically on mobile */
+    margin-bottom: 40px; /* Adjust margin */
+  }
+
+  .school-name {
+    font-size: 1.5em; /* Smaller font size for mobile */
+  }
+
+  .education-info {
+    font-size: 0.9em;
+  }
+
+  .education-organizations {
+    flex-direction: column; /* Stack organizations vertically */
+    align-items: center; /* Center align the text */
+  }
+
+  .education-organizations li {
+    margin: 10px 0; /* Reduce spacing for mobile */
+  }
+}
+
+/* Footer Styles */
+.footer {
+  padding: 25px;
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+#mustafaSaid {
+  font-family: 'DynaPuff', cursive;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+  margin: 10px;
+  animation: jump 1s infinite ease-in-out; /* Ensure easing function and animation are correct */
+  display: inline-block; /* Add display inline-block to ensure transform works */
+}
+
+/* Restoring Jumping Animation */
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Ensure the transform works */
+  }
+}
+
+/* Responsive Styles for Footer */
+@media (max-width: 768px) {
+  .navbar, .body-container, .sec {
+    padding: 20px;
+  }
+
+  .experience-item, .skills ul {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  #mustafaSaid {
+    font-size: 12px; /* Adjust font size for mobile */
+  }
+}
