@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/education.css'; // Importing the scoped CSS file
 
 const Education: React.FC = () => {
     return (
@@ -6,7 +7,8 @@ const Education: React.FC = () => {
             <h2 className="school-name">
                 <span className="arizona">Arizona </span>
                 <span className="state">State </span>
-                <span className="university">University </span> - Ira A. Fulton Schools of Engineering
+                <span className="university">University </span>
+                - Ira A. Fulton Schools of Engineering
             </h2>
             <h4 className="education-info">
                 Computer Science Software Engineering - Expected May 2025

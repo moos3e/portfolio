@@ -1,0 +1,82 @@
+/* Education Section Styling */
+.education-container {
+    background-color: #fff; /* White background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 40px 50px; /* Consistent padding for spacing */
+    margin: 120px auto; /* Center the container */
+    max-width: 900px; /* Limit width */
+    font-family: 'Ubuntu Mono', serif; /* Font for consistency */
+    color: #333; /* Dark text for readability */
+  }
+  
+  /* School Name Styling */
+  .school-name {
+    font-size: 2em; /* Larger font for school name */
+    margin-bottom: 15px; /* Spacing below name */
+    text-align: center; /* Center alignment for header */
+    font-weight: bold; /* Emphasized font weight */
+  }
+  
+  .arizona {
+    color: maroon; /* Arizona text color */
+  }
+  
+  .state {
+    color: gold; /* State text color */
+  }
+  
+  .university {
+    color: maroon; /* University text color */
+  }
+  
+  /* Education Information */
+  .education-info {
+    font-size: 1em; /* Standard font size */
+    margin-bottom: 15px; /* Consistent spacing */
+    line-height: 1.8; /* Increase line height for readability */
+    text-align: left; /* Left-aligned for details */
+  }
+  
+  /* Organization Section */
+  .education-organizations {
+    display: flex;
+    justify-content: center; /* Center alignment for the list */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* No padding for the list */
+    margin: 20px 0; /* Spacing around the section */
+  }
+  
+  .education-organizations li {
+    margin: 10px 20px; /* Balanced spacing between items */
+    font-weight: 600; /* Bold font for emphasis */
+    font-size: 1.1em; /* Slightly larger text size */
+    color: #000; /* Black text for visibility */
+    text-align: center; /* Center-aligned items */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .education-container {
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .school-name {
+      font-size: 1.6em; /* Reduce font size for smaller screens */
+    }
+  
+    .education-info {
+      font-size: 0.9em; /* Slightly smaller text size */
+      line-height: 1.5; /* Adjust line spacing */
+    }
+  
+    .education-organizations {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center-align for mobile */
+    }
+  
+    .education-organizations li {
+      margin: 10px 0; /* Reduce spacing between items */
+    }
+  }

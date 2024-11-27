@@ -1,71 +1,114 @@
-/* Scoped Projects Section */
-/* Projects Section Styling */
+/* Projects Container Styling */
 .projects-container {
-    background-color: #fff; /* White background for the box */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for 3D effect */
-    padding: 60px 40px; /* Increase padding inside the box */
-    margin: 60px auto; /* Increase space between sections */
-    width: 90%; /* Consistent width as other sections */
-    max-width: 900px; /* Set max-width similar to other sections */
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 60px 40px;
+  margin: 120px auto;
+  width: 90%; /* Ensure full-width consistency */
+  max-width: 1000px; /* Match the max-width of other sections */
+  font-family: 'Ubuntu Mono', serif;
+}
+
+/* Header Styling */
+.projects-header {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Individual Project Item Styling */
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align content vertically */
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.3);
+}
+
+/* Project Description Styling */
+.project-description {
+  flex: 3;
+  margin-right: 20px;
+  line-height: 1.6;
+  font-size: 1em;
+  color: #000;
+}
+
+.project-description h5 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #0073e6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-description h5:hover {
+  text-decoration: underline;
+}
+
+/* Project Tech Styling */
+.project-tech {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-tech ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-tech li {
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 0.9em;
+  color: #000;
+  background: transparent;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Project Image Styling */
+.project-image {
+  flex: 1;
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  /* Specific styles for project items */
-  .projects-container .project-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(224, 224, 224, 0.3);
-  }
-  
-  .projects-container .desc {
-    font-family: 'Ubuntu Mono', serif;
-    font-size: 1em;
-    color: #333;
+
+  .project-description {
+    margin-right: 0;
     margin-bottom: 20px;
   }
-  
-  /* Scoped styles for project links */
-  .projects-container .desc h5 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    color: #00C49F;
+
+  .project-tech {
+    align-items: flex-start;
+    margin-bottom: 20px;
   }
-  
-  .projects-container .desc p {
-    margin-bottom: 10px;
+
+  .project-image {
+    margin-left: 0;
+    width: 100%;
   }
-  
-  /* Scoped styles for lists within projects */
-  .projects-container ul {
-    list-style-type: none; /* Remove bullet points for project lists */
-    padding-left: 0;
-  }
-  
-  /* Scoped list item styles */
-  .projects-container ul li {
-    margin-bottom: 5px;
-    padding-left: 15px;
-    position: relative;
-  }
-  
-  /* Scoped bullet point styles for project list items */
-  .projects-container ul li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: #000000; /* Bullet color */
-  }
-  
-  /* Project link styling */
-  .projects-container .projlink {
-    text-decoration: none;
-    color: #000000;
-  }
-  
-  .projects-container .projlink:hover {
-    text-decoration: underline;
-  }
+}
