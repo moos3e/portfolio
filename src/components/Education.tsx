@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/education.css'; // Importing the scoped CSS file
+import '../styles/Education.css'; // Importing the scoped CSS file
 
 const Education: React.FC = () => {
     return (
