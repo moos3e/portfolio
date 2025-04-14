@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
             <div className="project-item">
                 <div className="project-description">
                     <h5>
-                        <a href="https://github.com/yourusername/portfolio-website"
+                        <a href="https://github.com/moos3e/portfolio"
                             className="projlink float-on-hover"
                             target="_blank"
                             rel="noopener noreferrer">
