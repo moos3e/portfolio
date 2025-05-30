@@ -13,53 +13,74 @@
   /* School Name Styling */
   .school-name {
     font-size: 2em; /* Larger font for school name */
-    margin-bottom: 15px; /* Spacing below name */
+    margin-bottom: 40px; /* Spacing below name */
     text-align: center; /* Center alignment for header */
     font-weight: bold; /* Emphasized font weight */
   }
   
+  /* School Name Colors */
   .arizona {
-    color: maroon; /* Arizona text color */
+    color: maroon;
   }
   
   .state {
-    color: gold; /* State text color */
+    color: gold;
   }
   
   .university {
-    color: maroon; /* University text color */
+    color: maroon;
   }
   
   /* Education Information */
   .education-info {
-    font-size: 1em; /* Standard font size */
-    margin-bottom: 15px; /* Consistent spacing */
-    line-height: 1.8; /* Increase line height for readability */
-    text-align: left; /* Left-aligned for details */
+    font-size: 1em;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    text-align: left;
+  }
+  
+  /* Degree Information */
+  .degree-info {
+    font-size: 1.4em;
+    margin: 25px 0;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    padding: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    border-top: 2px solid #f0f0f0;
+  }
+  
+  .degree-info span {
+    color: #666;
+    font-weight: 500;
   }
   
   /* Organization Section */
   .education-organizations {
     display: flex;
-    justify-content: center; /* Center alignment for the list */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    list-style: none; /* Remove default bullet points */
-    padding: 0; /* No padding for the list */
-    margin: 20px 0; /* Spacing around the section */
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
   }
   
   .education-organizations li {
-    margin: 10px 20px; /* Balanced spacing between items */
-    font-weight: 600; /* Bold font for emphasis */
-    font-size: 1.1em; /* Slightly larger text size */
-    color: #000; /* Black text for visibility */
-    text-align: center; /* Center-aligned items */
+    margin: 10px 20px;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #000;
+    text-align: center;
   }
   
   /* Responsive Design */
   @media (max-width: 768px) {
     .education-container {
-      padding: 20px; /* Adjust padding for smaller screens */
+      padding: 20px 30px; /* Increased side padding for mobile */
+      margin: 60px 20px; /* Add margin on sides */
+      width: auto; /* Allow container to adjust to padding */
     }
   
     .school-name {
@@ -67,16 +88,16 @@
     }
   
     .education-info {
-      font-size: 0.9em; /* Slightly smaller text size */
-      line-height: 1.5; /* Adjust line spacing */
+      font-size: 0.9em;
+      line-height: 1.5;
     }
   
     .education-organizations {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center-align for mobile */
+      flex-direction: column;
+      align-items: center;
     }
   
     .education-organizations li {
-      margin: 10px 0; /* Reduce spacing between items */
+      margin: 10px 0;
     }
   }

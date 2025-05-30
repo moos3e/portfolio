@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
             <div className="project-item">
                 <div className="project-description">
                     <h5>
-                        <a href="https://github.com/yourusername/helper-hat"
+                        <a href="https://github.com/moos3e/The-Helper-Hat"
                             className="projlink float-on-hover"
                             target="_blank"
                             rel="noopener noreferrer">
@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
             <div className="project-item">
                 <div className="project-description">
                     <h5>
-                        <a href="https://github.com/yourusername/syn-gen"
+                        <a href="https://github.com/moos3e/syn-gen"
                             className="projlink float-on-hover"
                             target="_blank"
                             rel="noopener noreferrer">

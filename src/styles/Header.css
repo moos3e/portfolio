@@ -1,0 +1,129 @@
+.header {
+  padding: 2rem 0;
+  position: relative;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hello {
+  text-align: center;
+  padding: 2.5rem 0 2rem 0;
+}
+
+.solo2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+}
+
+.color-transition {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.2rem 0.7rem;
+  position: relative;
+  display: inline-block;
+}
+
+.name-container {
+  position: relative;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.name-container a {
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.name-container:hover a {
+  transform: scale(1.05);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Particle effect container */
+.name-effect-wrapper {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  min-width: 320px;
+  min-height: 80px;
+}
+
+.name-effect-wrapper h1 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+#nameParticles {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1;
+  pointer-events: none;
+  background: transparent !important;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+nav a:hover {
+  color: #228B22;
+  text-shadow: 0 0 15px rgba(34, 139, 34, 0.7);
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .color-transition {
+    font-size: 2.5rem;
+    padding: 0.1rem 0.3rem;
+  }
+  
+  .solo2 {
+    font-size: 1.2rem;
+  }
+} 

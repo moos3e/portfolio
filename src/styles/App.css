@@ -44,27 +44,28 @@ body {
 /* Keyframes and Animations */
 @keyframes colorCycle {
   0% {
-    color: #ff5733; /* Start with orange */
+    color: #000000;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-  25% {
-    color: #33ff57; /* Transition to green */
+  33% {
+    color: #444444;
+    text-shadow: 0 0 15px rgba(68, 68, 68, 0.5);
   }
-  50% {
-    color: #3357ff; /* Transition to blue */
-  }
-  75% {
-    color: #ff33a6; /* Transition to pink */
+  66% {
+    color: #222222;
+    text-shadow: 0 0 20px rgba(34, 34, 34, 0.5);
   }
   100% {
-    color: #ff5733; /* Loop back to orange */
+    color: #000000;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 }
 
 .color-transition {
   font-size: 3rem;
   font-weight: bold;
-  animation: colorCycle 20s infinite; 
-  transition: color 1s ease-in-out;
+  animation: colorCycle 12s infinite; 
+  transition: all 1s ease-in-out;
 }
 
 /* Navbar Styles */
@@ -113,15 +114,18 @@ ul li a {
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
   position: relative;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 ul li a:hover {
-  color: #ff5733;
+  color: #228B22; /* Forest Green */
   transform: translateY(-2px);
+  text-shadow: 0 0 15px rgba(34, 139, 34, 0.7);
 }
 
 ul li a:active {
   transform: translateY(0);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 /* Jump Animation */
@@ -139,8 +143,38 @@ ul li a:active {
 /* Section Styles */
 section {
   min-height: 100vh;
-  padding: 80px 0;
+  padding: 80px 20px;
   scroll-margin-top: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Container Base Styles */
+.education-container,
+.experience-container,
+.projects-container {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  margin: 120px auto;
+  max-width: 900px;
+  font-family: 'Ubuntu Mono', serif;
+  color: #333;
+  width: 100%;
+}
+
+/* Container Header Styles */
+.education-container h2,
+.experience-container h2,
+.projects-container h2,
+.school-name {
+  font-size: 2em;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
 }
 
 /* Header Section */
@@ -180,6 +214,14 @@ hgroup {
   margin: 10px;
   animation: jump 1s infinite ease-in-out;
   display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#mustafaSaid:hover {
+  opacity: 1;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* Responsive Styles */
@@ -198,8 +240,23 @@ hgroup {
   }
 
   section {
-    padding: 60px 0;
+    padding: 60px 10px;
     scroll-margin-top: 60px;
+  }
+
+  .education-container,
+  .experience-container,
+  .projects-container {
+    padding: 20px 30px;
+    margin: 60px 20px;
+    width: auto;
+  }
+
+  .education-container h2,
+  .experience-container h2,
+  .projects-container h2,
+  .school-name {
+    font-size: 1.6em;
   }
 
   #mustafaSaid {
