@@ -4,11 +4,11 @@ import '../styles/Header.css';
 
 const Header: React.FC = () => {
     return (
-        <div className="container">
-            <div className="hello">
-                <hgroup>
-                    <h3 className="solo2">Hello, I'm</h3>
-                    <h1 className="color-transition">
+        <div className="container max-w-2xl w-full mx-auto px-4">
+            <div className="hello text-center py-10 md:py-8 sm:py-4">
+                <hgroup className="flex flex-col items-center justify-center text-center w-full h-[60vh] md:h-[40vh] sm:h-auto">
+                    <h3 className="solo2 text-white text-lg md:text-base sm:text-sm">Hello, I'm</h3>
+                    <h1 className="color-transition text-4xl md:text-3xl sm:text-2xl font-bold">
                         <a
                             href="https://www.linkedin.com/in/mmsaid/"
                             target="_blank"
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
                             Mustafa Said
                         </a>
                     </h1>
-                    <h3 className="solo2">but you can call me moose</h3>
+                    <h3 className="solo2 text-white text-lg md:text-base sm:text-sm">but you can call me moose</h3>
                 </hgroup>
             </div>
         </div>

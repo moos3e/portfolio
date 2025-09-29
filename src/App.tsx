@@ -10,20 +10,20 @@ import CursorParticles from './components/CursorParticles';
 
 const App: React.FC = () => {
   return (
-    <div className="app-container">
+    <div className="app-container min-h-screen w-full flex flex-col items-center bg-gradient-to-b from-gray-300 to-black relative overflow-x-hidden">
       <CursorParticles />
       <Navbar />
-      <main>
-        <section id="header">
+      <main className="w-full flex flex-col items-center flex-1">
+        <section id="header" className="w-full flex justify-center items-start">
           <Header />
         </section>
-        <section id="experience">
+        <section id="experience" className="w-full flex justify-center items-start">
           <Experience />
         </section>
-        <section id="projects">
+        <section id="projects" className="w-full flex justify-center items-start">
           <Projects />
         </section>
-        <section id="education">
+        <section id="education" className="w-full flex justify-center items-start">
           <Education />
         </section>
       </main>
